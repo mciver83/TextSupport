@@ -3,7 +3,7 @@
 <div class="tickets" ng-repeat="(number, messages) in numbers">
 	<h3>{{number}}</h3>
 	<div class="ticket" ng-repeat="(id, message) in messages">
-		<p> {{message.date_sent | date: medium}} </p>
+		<p> {{message.date_sent | date: 'medium'}} </p>
 		<p> {{message.body}} </p>
 	</div>
 	<input type="text" ng-model="newMessage" /><buttonx ng-click="sendMessage(newMessage, number)">Send</button>

@@ -6,7 +6,7 @@ $scope.numbers = $firebaseObject(new Firebase('https://textsupport01.firebaseio.
 
 $scope.sendMessage = function(message, number){
 	MessageService.sendMessage(message, number).then(function(response){
-		$scope.newMessage = ''
+		$scope.newMessage = '';
 	})
 }
 
